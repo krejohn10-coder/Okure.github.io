@@ -5,3 +5,7 @@
 <img src="PASTE_IMAGE_LINK_HERE" width="300">
 
 <img src="PASTE_SECOND_IMAGE_LINK_HERE" width="300">
+<p align="center">
+  <img src="IMAGE1_LINK" width="250">
+  <img src="IMAGE2_LINK" width="250">
+</p>
