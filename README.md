@@ -1,11 +1,48 @@
-# Okure-John-matthew
- Okure John is a Ugandan graduate in Computer Science and Telecommunication Engineering from Makerere University. Passionate about technology, software development, and teamwork. Skilled in project collaboration and interested in growing within the computing and technology industry.
-<h2>My Photos</h2>
+ <!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Jotham Jeremiah Okure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<img src="PASTE_IMAGE_LINK_HERE" width="300">
+  <!-- Home page photo sections -->
+  <h1>Home</h1>
+  <div class="gallery">
+    <!-- Section for Papa -->
+    <div class="section">
+      <img src="images/papa1.jpg" alt="Jotham Jeremiah with his father" onclick="openLightbox(this)">
+      <p><strong>Papa</strong> – <a href="gallery.html#papa">More photos</a></p>
+    </div>
+    <!-- Section for Jeremiah -->
+    <div class="section">
+      <img src="images/jeremiah.jpg" alt="Jeremiah Okure smiling" onclick="openLightbox(this)">
+      <p><strong>Jeremiah</strong> – <a href="gallery.html#jeremiah">More photos</a></p>
+    </div>
+    <!-- Section for Mum & Jeremiah -->
+    <div class="section">
+      <img src="images/mum_jeremiah.jpg" alt="Jeremiah Okure with his mother" onclick="openLightbox(this)">
+      <p><strong>Mum & Jeremiah</strong> – <a href="gallery.html#mum">More photos</a></p>
+    </div>
+  </div>
 
-<img src="PASTE_SECOND_IMAGE_LINK_HERE" width="300">
-<p align="center">
-  <img src="IMAGE1_LINK" width="250">
-  <img src="IMAGE2_LINK" width="250">
-</p>
+  <!-- Lightbox modal (hidden by default) -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
